@@ -276,6 +276,59 @@ h4 {
     width: 100%;
 }
 
+#career {
+    display: flex;
+    align-items: center;
+    background-color: #FF42A5;
+}
+
+#career-text {
+    width: 50%;
+    padding: 1em 3em 1em 10em;
+    color: white;
+    text-align: justify;
+}
+
+#career-text h2 {
+    font-size: 2em;
+}
+
+#career-img {
+    width: 50%;
+    padding: 0em 2em;
+}
+
+#career-img img {
+    width: 100%;
+}
+
+#career-cls {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+#cls1 {
+    width: 50%;
+    text-align: left;
+}
+
+#cls2 {
+    width: 50%;
+    text-align: right;
+}
+
+.btn-white {
+    background-color: white;
+    color: #FF42A5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 /* mobile device CSS  */
 @media screen and (max-width: 425px) {
     nav {
@@ -381,5 +434,22 @@ h4 {
         width: 40%;
         margin-top: -90px;
         margin-left: 240px;
+    }
+
+    #career {
+        flex-direction: column;
+        /* width: 100%; */
+        margin: auto;
+        padding: 2em;
+    }
+
+    #career-text {
+        width: 100%;
+        padding: 1em;
+    }
+
+    #career-img {
+        width: 100%;
+        padding: 1em;
     }
 }
