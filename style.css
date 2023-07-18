@@ -125,8 +125,33 @@ h4 {
     margin: 0.25em 0;
 }
 
+#we {
+    background: linear-gradient(to top, #8758F1, #F948B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+    margin: 0.25em 0;
+}
+
 #banner-text ul li {
     margin: 0.5em 0;
+}
+
+#nd-section {
+    display: flex;
+    padding: 1em 8em;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+}
+
+#wing4-text {
+    text-align: right;
+    padding: 1em 6em;
+}
+
+#wing4-text p span {
+    font-size: 1.5em;
+    font-weight: 800;
 }
 
 /* mobile device CSS  */
