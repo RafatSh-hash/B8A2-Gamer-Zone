@@ -4,6 +4,8 @@ nav {
     justify-content: space-between;
 }
 
+
+
 #name span {
     color: #FF42A5;
 }
@@ -45,4 +47,33 @@ nav {
 
 #follow-icons img {
     margin: 0 0;
+}
+
+@media screen and (max-width: 425px) {
+    nav {
+        flex-direction: column;
+        padding: 0 3em;
+        justify-content: center;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #menu a {
+        margin: 0.5em 0;
+    }
+
+    #logo {
+        margin: 2em 0;
+        padding: 0 3em;
+    }
+
+    #follow-btn {
+        margin: 2em 0;
+    }
+
+    #follow-icons {
+        display: flex;
+    }
 }
