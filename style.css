@@ -1,0 +1,48 @@
+nav {
+    display: flex;
+    padding: 1em 6em;
+    justify-content: space-between;
+}
+
+#name span {
+    color: #FF42A5;
+}
+
+#name {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 0.5em;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+}
+
+#menu a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#follow-btn {
+    display: flex;
+    align-items: center;
+    background-color: #0000003b;
+    padding: 0 1em;
+    border-radius: 0.25em;
+}
+
+#follow-icons {
+
+    margin: 0 0.5em;
+}
+
+#follow-icons img {
+    margin: 0 0.5em;
+}
