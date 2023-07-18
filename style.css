@@ -1,6 +1,7 @@
 body {
     padding: 0 0;
     margin: 0 0;
+    text-align: center;
 }
 
 nav {
@@ -133,6 +134,18 @@ h4 {
     margin: 0.25em 0;
 }
 
+#online-games-headline {
+    font-size: 2em;
+}
+
+#online-games-headline span {
+    background: linear-gradient(to top, #8758F1, #F948B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 0.25em 0;
+}
+
 #banner-text ul li {
     margin: 0.5em 0;
 }
@@ -152,6 +165,115 @@ h4 {
 #wing4-text p span {
     font-size: 1.5em;
     font-weight: 800;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 315px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay p {
+    color: white;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.2);
+}
+
+.card-text {
+    position: absolute;
+    bottom: 10px;
+    text-align: justify;
+    left: 10px;
+    color: black;
+    font-size: 16px;
+    z-index: 1;
+}
+
+#game-container {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3em;
+    width: 80%;
+
+    padding: 1em 1em;
+}
+
+#ending-banner-text {
+    font-size: 1.5em;
+    text-align: justify;
+    padding: 1em 1em 1em 9em;
+    width: 50%;
+}
+
+#ending-banner-text h2 span {
+    background: linear-gradient(to top, #8758F1, #F948B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#ending-banner {
+    display: flex;
+    width: 75%;
+    margin: 5em auto;
+}
+
+#img-container {
+    width: 50%;
+    padding: 1em 2em;
+}
+
+#s-img {
+    margin-top: -250px;
+    margin-left: 350px;
+    width: 100%;
 }
 
 /* mobile device CSS  */
@@ -227,5 +349,37 @@ h4 {
     #wing4-text {
         text-align: center;
         padding: 1em 1em;
+    }
+
+    #game-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #ending-banner {
+        flex-direction: column-reverse;
+    }
+
+    #img-container {
+        width: 100%;
+        padding: 1em 6em 1em 1em;
+    }
+
+    #ending-banner-text {
+        width: 100%;
+        padding: 1em;
+    }
+
+    #m-img img {
+        width: 100%;
+    }
+
+    #s-img img {
+        width: 100%;
+    }
+
+    #s-img {
+        width: 40%;
+        margin-top: -90px;
+        margin-left: 240px;
     }
 }
