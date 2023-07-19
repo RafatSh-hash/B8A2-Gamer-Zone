@@ -14,17 +14,17 @@ nav {
 
 
 
-#name span {
+.name span {
     color: #FF42A5;
 }
 
-#name {
+.name {
     font-size: 2em;
     font-weight: bold;
     margin: 0 0.5em;
 }
 
-#logo {
+.logo {
     display: flex;
     align-items: center;
 }
@@ -357,6 +357,50 @@ h4 {
     margin: 0 1em;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B0223;
+    padding: 5em;
+    color: white;
+}
+
+#foot-menu {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin: 2em auto 0.5em auto;
+    justify-content: space-evenly;
+}
+
+#foot-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+#social-menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+    width: 40%;
+    flex-wrap: wrap;
+    margin: 2em auto 0.5em auto;
+    justify-content: space-around;
+}
+
+#page-utilites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 55%;
+    margin: 2em auto 0.5em auto;
+}
+
+#page-utilites a {
+    text-decoration: none;
+    color: #888888;
+}
+
 /* mobile device CSS  */
 @media screen and (max-width: 425px) {
     nav {
@@ -376,7 +420,7 @@ h4 {
         margin: 0.5em 0;
     }
 
-    #logo {
+    .logo {
         margin: 2em 0;
         padding: 0 3em;
     }
@@ -489,5 +533,41 @@ h4 {
         width: 45%;
         margin: 1em auto;
         padding: 0.5em;
+    }
+
+    footer {
+        padding: 1em;
+    }
+
+    #foot-menu {
+        width: 70%;
+    }
+
+    #foot-menu a {
+        margin: 0.5em 0.5em;
+    }
+
+    #social-menu {
+        width: 70%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #social-menu a {
+        align-items: center;
+        margin: 0.5em 0.5em;
+    }
+
+    #page-utilites {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #page-utilites a {
+        margin: 0.5em 0.5em;
+    }
+
+    #social-menu a img {
+        width: 50%;
+        align-self: center;
     }
 }
