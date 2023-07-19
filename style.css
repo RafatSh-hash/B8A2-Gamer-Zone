@@ -329,6 +329,34 @@ h4 {
     margin-right: 10px;
 }
 
+#category {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+
+    margin: 2em auto;
+}
+
+.cat-card {
+    display: flex;
+    border: 1px solid white;
+    padding: 0.5em;
+    border-radius: 5em;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    width: 18%;
+}
+
+.cat-card:hover {
+    border: 1px solid #FF42A5;
+    color: #F948B2;
+}
+
+.cat-card p {
+    margin: 0 1em;
+}
+
 /* mobile device CSS  */
 @media screen and (max-width: 425px) {
     nav {
@@ -451,5 +479,15 @@ h4 {
     #career-img {
         width: 100%;
         padding: 1em;
+    }
+
+    #category {
+        width: 96%;
+    }
+
+    .cat-card {
+        width: 45%;
+        margin: 1em auto;
+        padding: 0.5em;
     }
 }
