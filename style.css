@@ -37,7 +37,7 @@ nav {
 
 #menu a {
     color: black;
-    margin: 0 10px;
+    margin: 0 20px;
     text-decoration: none;
 }
 
@@ -503,6 +503,38 @@ footer {
         width: 95%;
     }
 }
+
+/* Change the scrollbar track's background color to white */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Change the scrollbar thumb color to #FF42A5 and add a white gradient */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#FF42A5, rgb(230, 119, 220));
+    border-radius: 8px;
+}
+
+/* Slowly change the scrollbar thumb color on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(rgb(187, 120, 181), #FF42A5);
+    transition: background-image 0.5s ease;
+}
+
+/* Style the scrollbar up button as an arrow */
+::-webkit-scrollbar-button:vertical:increment {
+    background-color: #FF42A5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+}
+
+/* Style the scrollbar down button as an arrow */
+::-webkit-scrollbar-button:vertical:decrement {
+    background-color: #FF42A5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M7 14l5-5 5 5z'/%3E%3C/svg%3E");
+}
+
 
 /* mobile device CSS  */
 @media screen and (max-width: 425px) {
