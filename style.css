@@ -2,6 +2,7 @@ body {
     padding: 0 0;
     margin: 0 0;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -43,7 +44,7 @@ nav {
 #follow-btn {
     display: flex;
     align-items: center;
-    background-color: #0000003b;
+    background-color: #a5a5a53b;
     padding: 0 1em;
     border-radius: 0.25em;
 }
@@ -65,6 +66,11 @@ nav {
     border-radius: 25px;
     cursor: pointer;
     margin-right: 10px;
+    transition: all 0.5s;
+}
+
+.btn-pink:hover {
+    transform: scale(1.1);
 }
 
 .btn-blue {
@@ -74,6 +80,11 @@ nav {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn-blue:hover {
+    transform: scale(1.1);
 }
 
 banner {
@@ -101,6 +112,11 @@ banner {
     text-align: justify;
 }
 
+#banner-text h2 {
+    font-size: 3em;
+    margin: 0 0.25em;
+}
+
 #banner-imgs {
     width: 55%;
     height: 700px;
@@ -113,7 +129,7 @@ banner {
     height: 100%;
 }
 
-h4 {
+h2 {
     font-size: 1.5em;
     margin: 0.25em 0;
 }
@@ -346,11 +362,16 @@ h4 {
     justify-content: center;
     margin: 1em auto;
     width: 18%;
+    cursor: pointer;
+    background: linear-gradient(85deg, #FF42A5 50%, #FFFFFF 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-in-out;
 }
 
 .cat-card:hover {
-    border: 1px solid #FF42A5;
-    color: #F948B2;
+    background-position: left;
+    color: white;
 }
 
 .cat-card p {
